@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# vscode
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+
+# Verilator
+obj_dir/
+*.vcd
+*.fst
