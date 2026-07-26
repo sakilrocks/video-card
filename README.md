@@ -42,10 +42,14 @@ single pixel. The EEPROM outputs these bits continuously as the counters advance
 
 This process repeats continuously at the VGA refresh rate, allowing the stored image to be displayed without any software running after power up
 
+![timing-diagram](docs/timing_diagram.heic)
+
 The design is derived from the standard **800 × 600 @ 60 Hz SVGA** timing specification. Instead of using the standard **40 MHz pixel clock**,
 the circuit operates from a **10 MHz clock**. To preserve the required horizontal and vertical scan frequencies, each logical pixel is held for
 4 clock cycles while the horizontal timing parameters are proportionally scaled. This results in a scan frequency of approximately **37.88
 kHz** and a refresh rate of approximately **60 Hz**, allowing the monitor to correctly synchronize with the generated video signal.
+
+![svga-timing](docs/svga_800x600_timing.heic)
 
 **The timing parameters for the project are:**
 
