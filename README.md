@@ -2,7 +2,7 @@
 
 *a video card built entirely from 74-series TTL logic ICs, capable of generating an **800 × 600 @ 60 Hz SVGA** video signal without the use of a microcontroller, FPGA, or dedicated graphics processor.*
 
-![video-card](img/video-card.heic)
+![video-card](img/video-card.jpg)
 
 ---
 
@@ -42,16 +42,17 @@ single pixel. The EEPROM outputs these bits continuously as the counters advance
 
 This process repeats continuously at the VGA refresh rate, allowing the stored image to be displayed without any software running after power up
 
-![timing-diagram](docs/timing_diagram.heic)
+![timing-diagram](docs/timing_diagram.jpg)
 
 The design is derived from the standard **800 × 600 @ 60 Hz SVGA** timing specification. Instead of using the standard **40 MHz pixel clock**,
 the circuit operates from a **10 MHz clock**. To preserve the required horizontal and vertical scan frequencies, each logical pixel is held for
 4 clock cycles while the horizontal timing parameters are proportionally scaled. This results in a scan frequency of approximately **37.88
 kHz** and a refresh rate of approximately **60 Hz**, allowing the monitor to correctly synchronize with the generated video signal.
 
-![svga-timing](docs/svga_800x600_timing.heic)
+![svga-timing](docs/svga_800x600_timing.jpg)
 
-**The timing parameters for the project are:**
+
+## The timing parameters for the project are:
 
 | Parameter | Value |
 |-----------|-------|
@@ -131,28 +132,28 @@ Total            : 628 lines
 
 ### 1. Complete Setup
 
-![Comeplete Setup](img/complete-setup.heic)
+![Comeplete Setup](img/complete-setup.jpg)
 
 *The completed TTL-based video card connected to a VGA monitor displaying the generated image.*
 
 
 ### 2. Display Output
 
-![Display Output](img/vga-output.HEIC)
+![Display Output](img/vga-output.jpg)
 
 *The generated 800 × 600 @ 60 Hz video output produced entirely by discrete TTL logic.*
 
 
 ### 3. Top View
 
-![Video Card](img/video-card(1).heic)
+![Video Card](img/video-card(1).jpg)
 
 *Top-down view of the completed breadboard implementation.*
 
 
 ### 4. T48 EEPROM Programmer
 
-![T48 Programmer](img/t48-programmer.heic)
+![T48 Programmer](img/t48-programmer.jpg)
 
 *T48 universal programmer used to program the AT28C256 EEPROM.*
 
